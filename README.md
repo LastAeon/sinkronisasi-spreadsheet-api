@@ -10,3 +10,5 @@ jalankan bot yang ingin dijalankan(bot0 hingga bot3)
 
 jika ingin menjalankan beberapa bot sekaligus, jalankan pada terminal yang berbeda
 
+
+note: terdapat batas menulis/membaca sheet sehingga disarankan untuk istirahatkan dahulu setelah bot dipakai. selain itu jika bot dijalankan terlalu lama, dapat terjadi error juga(limit exceed)

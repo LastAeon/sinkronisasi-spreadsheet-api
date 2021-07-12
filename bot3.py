@@ -22,4 +22,4 @@ while(True):
         sheet.update_cell(1, 3, '0')
         sleep(3)
     else:
-        sleep(randint(1, 5)/5)
+        sleep(randint(1, 2)/2)

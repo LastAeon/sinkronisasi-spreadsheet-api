@@ -21,5 +21,5 @@ while(True):
         sheet.update_cell(2, 3, "false") 
         sheet.update_cell(3, 3, "false") 
         sheet.update_cell(1, 3, '0')
-        sleep(randint(9, 10))
+        sleep(randint(63, 70)/7)
     sleep(1)
