@@ -1,5 +1,7 @@
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
+from random import randint
+from time import sleep
 
 
 # use creds to create a client to interact with the Google Drive API
@@ -11,14 +13,14 @@ client = gspread.authorize(creds)
 # Make sure you use the right name here.
 sheet = client.open("tes spreadsheet api").sheet1
 
-# Extract and print all of the values
-# list_of_hashes = sheet.get_all_records()
-# print(list_of_hashes)
-
-sheet.update_cell(1, 1, int(sheet.cell(1, 1).value)+1)
-
-print(len(sheet.row_values(1)))
-
-print(sheet.col_values(1))
-
-print(sheet.cell(1, 2).value)
+#bot
+while(True):
+    # print(sheet.cell(2, 3).value.lower())
+    # print(sheet.cell(2, 3).value.lower())
+    if(sheet.cell(1, 3).value == '0' and sheet.cell(2, 3).value.lower() == 'true' and sheet.cell(3, 3).value.lower() == 'true'):
+        sheet.update_cell(1, 3, '1')
+        sheet.update_cell(len(sheet.col_values(1))+1, 1, 'bot 0')
+        sheet.update_cell(1, 3, '0')
+    #     print("masuk")
+    # print("keluar")
+    sleep(1)
