@@ -12,3 +12,7 @@ jika ingin menjalankan beberapa bot sekaligus, jalankan pada terminal yang berbe
 
 
 note: terdapat batas menulis/membaca sheet sehingga disarankan untuk istirahatkan dahulu setelah bot dipakai. selain itu jika bot dijalankan terlalu lama, dapat terjadi error juga(limit exceed)
+
+
+# Inspiration
+https://www.twilio.com/blog/2017/02/an-easy-way-to-read-and-write-to-a-google-spreadsheet-in-python.html
