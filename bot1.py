@@ -17,7 +17,8 @@ sheet = client.open("tes spreadsheet api").sheet1
 while(True):
     if(sheet.cell(1, 3).value == '0'):
         sheet.update_cell(1, 3, '1')
-        sheet.update_cell(len(sheet.col_values(1))+1, 1, 'bot 1')
+        n=len(sheet.col_values(1))
+        sheet.update_cell(n+1, 1, 'bot 1, id: '+str(n))
         sheet.update_cell(2, 3, "true") 
         sheet.update_cell(1, 3, '0')
         sleep(3)

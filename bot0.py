@@ -20,7 +20,8 @@ while(True):
     if(sheet.cell(1, 3).value == '0'):
         sheet.update_cell(1, 3, '1')
         if(sheet.cell(2, 3).value.lower() == 'true' and sheet.cell(3, 3).value.lower() == 'true'):
-            sheet.update_cell(len(sheet.col_values(1))+1, 1, 'bot 0')
+            n=len(sheet.col_values(1))
+            sheet.update_cell(n+1, 1, 'bot 0, id: '+str(n))
         sheet.update_cell(1, 3, '0')
     #     print("masuk")
     # print("keluar")
