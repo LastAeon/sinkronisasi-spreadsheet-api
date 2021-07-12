@@ -6,7 +6,7 @@ buka sheet pada laman https://docs.google.com/spreadsheets/d/1B4OEqZxA9YTeH8GAPU
 
 reset sheet dengan menjalankan resetbot.py
 
-jalankan bot yang ingin dijalankan
+jalankan bot yang ingin dijalankan(bot0 hingga bot3)
 
 jika ingin menjalankan beberapa bot sekaligus, jalankan pada terminal yang berbeda
 
